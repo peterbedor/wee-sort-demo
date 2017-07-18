@@ -1,0 +1,94 @@
+{
+	"name": "Wee Sort Demo",
+	"paths": {
+		"root": "public",
+		"assets": "assets",
+		"source": "source"
+	},
+	"data": {},
+	"style": {
+		"data": {},
+		"core": {
+			"namespace": false,
+			"features": {
+				"buttons": true,
+				"code": false,
+				"forms": true,
+				"print": false,
+				"tables": true
+			},
+			"responsive": {
+				"enable": true,
+				"offset": 25,
+				"breakpoints": {
+					"mobileLandscape": 480,
+					"tabletPortrait": 768,
+					"desktopSmall": 1024,
+					"desktopMedium": 1280,
+					"desktopLarge": 1440
+				}
+			}
+		},
+		"build": [],
+		"compile": {}
+	},
+	"script": {
+		"data": {},
+		"core": {
+			"enable": true,
+			"namespace": "Wee",
+			"features": {
+				"animate": false,
+				"assets": false,
+				"chain": true,
+				"data": true,
+				"dom": true,
+				"events": true,
+				"history": false,
+				"routes": true,
+				"screen": true,
+				"touch": false,
+				"view": true
+			}
+		},
+		"build": [],
+		"compile": {},
+		"validate": {
+			"watch": true,
+			"jscs": "source/.jscs.json",
+			"jshint": "source/.jshintrc"
+		},
+		"sourceMaps": true
+	},
+	"generator": {
+		"enable": false,
+		"build": []
+	},
+	"defaultCommand": "run:static",
+	"server": {
+		"ghostMode": false,
+		"host": "auto",
+		"port": 9000,
+		"inject": [],
+		"reload": {
+			"enable": true,
+			"ignore": [],
+			"watch": {
+				"root": true,
+				"paths": [],
+				"extensions": [
+					"html"
+				]
+			}
+		},
+		"tasks": {
+			"local": {
+				"https": true,
+				"proxy": "https://wee.dev"
+			},
+			"static": {
+				"https": true
+			}
+		}
+	}
+}

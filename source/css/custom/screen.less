@@ -1,0 +1,29 @@
+.wee-sort {
+	.margin(top; 6);
+}
+
+.wee-sort-form {
+	.inline-row(2%);
+	button&__button {
+		.inline-column(spaced; 1; 6; 2%);
+	}
+	select&__select {
+		.appearance(none);
+		.min-height(4);
+		.min-width(100%);
+	}
+	&__select-wrap {
+		.inline-column(spaced; 1; 6; 2%);
+		.relative();
+		&::after {
+			.absolute(1.6; 1.2);
+			.caret(down);
+		}
+	}
+	input&__input {
+		.inline-column(spaced; 4; 6; 2%);	
+	}
+}
+.wee-sort-direction {
+	.cursor();
+}
